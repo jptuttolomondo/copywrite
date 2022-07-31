@@ -55,7 +55,7 @@ export function Home() {
 
 
         aux.map((e) => {
-          return <div key={aux.indexOf(e)}>{e} </div>;
+          return <div key={aux.indexOf(e)} >{e} </div>;
         })
         }
       </div>
