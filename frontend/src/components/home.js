@@ -30,13 +30,13 @@ export function Home() {
   }
 
   return (  
-    <div className="container-fluid">    
+    <div className=" bg-success">    
  
     
       <h1>App copywrite Juan Pablo Tuttolomondo</h1>
-      <div >
+      <div>
         <input
-        className="col-4 col-m-2 col-lg-2" 
+        className="col-4 col-m-2 col-lg-2 bg-warning" 
      
           type="text"
           placeholder="insert text"
@@ -45,7 +45,7 @@ export function Home() {
           onChange={(e) => handleInputChange(e)}
         />
         <button
-          className="btn btn-primary"
+          className="btn btn-info"
           type="submit"
           onClick={(e) => handleSubmit(e)}>  Send </button>
         <p></p>
@@ -55,7 +55,10 @@ export function Home() {
 
 
         aux.map((e) => {
-          return <div key={aux.indexOf(e)} >{e} </div>;
+          return <div key={aux.indexOf(e)}className="container bg-danger" >
+            <ul><li className="list-group">{e}</li> </ul>
+            
+           </div>;
         })
         }
       </div>
